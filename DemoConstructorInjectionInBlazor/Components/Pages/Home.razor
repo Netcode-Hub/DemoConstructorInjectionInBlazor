@@ -1,0 +1,22 @@
+﻿@page "/"
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (PublicDivisions != null)
+        {
+            @foreach (var item in PublicDivisions)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Number</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
